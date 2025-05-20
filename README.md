@@ -35,3 +35,8 @@ npm install
 ````bash
 npm run dev <numero_funzione> <stringa_input> [parametro_aggiuntivo]
 ````
+**Possibili funzioni:**
+- 1: Inverti Stringa (reverseString)
+- 2: Controlla Palindromo (isPalindrome)
+-  3: Tronca Stringa (truncateString) - richiede [lunghezza_massima]
+- 4: Conta Caratteri (countCharacters)
