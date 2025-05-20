@@ -5,11 +5,15 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
-  "keywords": ["string", "test", "command-line"],
+  "keywords": [
+    "string",
+    "test",
+    "command-line"
+  ],
   "author": "Daniele Scrima - S5421484",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/Radiaxx/ssgs-labo-02.git"
   },
@@ -21,5 +25,8 @@
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
