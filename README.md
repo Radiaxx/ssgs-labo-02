@@ -38,5 +38,15 @@ npm run dev <numero_funzione> <stringa_input> [parametro_aggiuntivo]
 **Possibili funzioni:**
 - 1: Inverti Stringa (reverseString)
 - 2: Controlla Palindromo (isPalindrome)
--  3: Tronca Stringa (truncateString) - richiede [lunghezza_massima]
+- 3: Tronca Stringa (truncateString) - richiede [lunghezza_massima]
 - 4: Conta Caratteri (countCharacters)
+
+## Testing:
+
+Una suite di test e' inclusa utilizzando la libreria [Jest](https://jestjs.io/). Gli unit test coprono le funzionalita' di trasformazione di stringhe contenute nel progetto (`reverseString`, `isPalindrome`, `truncateString`, `countCharacters`). In output viene ritornato il coverage dei test presenti, applicando come vincolo il `100%` di coverage nelle metriche di `branch`, `functions`, `lines`, `statements`.
+
+Per eseguire i test localmente, eseguire sul terminale:
+
+````bash
+npm test
+````
