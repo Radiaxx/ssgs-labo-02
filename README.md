@@ -50,3 +50,16 @@ Per eseguire i test localmente, eseguire sul terminale:
 ````bash
 npm test
 ````
+
+## Github Actions:
+
+Un workflow di Github Actions e' incluso e configurato in [`.github/workflows/build-test.yml`](). Automatizza il processo di test del progetto e mostra in output la coverage, caricandola come artifact all'interno delle actions e viene eeseguita solamente su eventi significati come `push` e `pull_request`.
+
+- **Trigger:** Il workflow e' eseguito automaticamente sull'evento di `push`.
+- **Environment:** E' eseguito su ambiente Ubuntu con Node.js v18.x.
+- **Steps:**
+    1. Esegue il checkout della repository sul branch in cui viene eseguito.
+    2. Inizializza l'ambiente Node.js.
+    3. Installa le dipendenze con `npm ci`.
+    4. Esegue la suite di test con `npm test`.
+    5. Carica un artifact su github actions contenente il report della code covera.
